@@ -42,6 +42,10 @@
     background: rgb(67, 0, 86);
 }
 
+.navbar-toggler{
+    cursor: pointer;
+}
+
 #logo{
     font-size: 1.56rem;
     color: white;
@@ -64,3 +68,20 @@
     font-weight: bold;
 }
 
+/*Home*/
+#home{
+    height: 80vh;
+    background: burlywood;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.carousel-inner{
+    max-width: 80vw;
+    text-align: center;
+    margin-left: auto;
+}
+
+.carousel-item img{
+    max-width: 85%;
+} 
