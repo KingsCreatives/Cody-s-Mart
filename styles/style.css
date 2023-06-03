@@ -229,6 +229,15 @@
     align-items: center;  
 }
 
+.ipad-card img{
+    display: block;
+    margin-top: 1rem;
+}
+
+.row{
+    margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 767px) and (max-width:992px){
     i.fa-cart-shopping{
         display: none;
