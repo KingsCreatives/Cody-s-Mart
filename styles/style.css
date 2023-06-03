@@ -71,8 +71,8 @@
     font-weight: bold;
 }
 
-/*Home*/
-#home{
+/*Home & Banner*/
+#home, #banner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,17 +85,17 @@
     z-index: 0;
 }
 
-#home .img{
+#home .img, #banner .img{
     flex: 1 1 300px;
 }
 
-#home .img img{
+#home .img img, #banner .img img{
     flex: 1 1 400px;
     margin-top: 1.875rem;
     width: 100%;
 }
 
-#home .content{
+#home .content, #banner .content{
     flex: 1 1 400px;
     margin-top: 1.25rem;
 }
@@ -104,6 +104,7 @@
     color: rgb(67, 0, 86);
     font-weight: bold;
     margin-left: 24px;
+    margin-top: 23px;
     font-size: 3rem;
     text-shadow: -1px 1px 1px black;
 }
@@ -119,7 +120,7 @@
 
 .content p{
     margin: 23px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .btn{
@@ -145,21 +146,25 @@
     border: none;
 }
 
+#banner{
+    margin-top: 2.5rem;
+}
+
 @media screen and (max-width: 1200px) {
-    #home{
+    #home, #banner{
         height: 90vh;
     }
 }
 
 @media screen and (max-width: 800px) {
-    #home{
+    #home, #banner{
         height: 110vh;
     }
 
 }
 
 @media screen and (max-width: 550px) {
-    #home{
+    #home , #banner{
         height: 110vh;
     }
 
@@ -173,7 +178,7 @@
 }
 
 @media screen and (max-width: 420px) {
-    #home{
+    #home, #banner{
         height: 110vh;
     }
 }
@@ -182,6 +187,11 @@
 /*Products*/
 .products-cards{
   margin-top: 3.5rem;
+}
+
+.products-cards > h1, #banner > div.content h1{
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .products-cards h1, h1.latest-collection{
@@ -278,3 +288,4 @@ button.shop-now:hover{
         margin-top: -0.6rem;
     }
 }
+
